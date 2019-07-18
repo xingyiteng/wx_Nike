@@ -1,0 +1,62 @@
+<view class="box">
+	<!-- 未授权可以调用 头像 姓名 -->
+	  <!-- <open-data type="userAvatarUrl" class="userinfo" class="userinfo"></open-data> 
+	  <open-data type="userNickName" lang="zh_CN"></open-data>  -->
+
+	<!-- 授权后可以调用 头像 姓名 -->
+	<view class='img'>
+		<image bindtap="bindViewTap" class="userinfo" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+	</view>
+	<view class="box_r">
+		<view>
+			{{userInfo.nickName}}
+		</view>
+		<view>
+			<text >我已完成训练:0个</text>
+			<text bind:tap="tc">联系我们</text>
+		</view>
+	</view>
+</view>
+
+<view class="jx">
+	进行中的训练
+</view>
+
+<view class="list_img">
+   <!-- 入门计划 默认隐藏-->
+	<van-transition show="{{ gg }}" custom-class="block">
+		<navigator url="../jsrm/jsrm">
+			<image src="{{imgUrl[0]}}"/>	
+		</navigator>
+	</van-transition>
+
+	<!-- 短时训练1 默认隐藏-->
+	<van-transition show="{{ jbrz }}" custom-class="block">
+		<navigator url="../me_gl/me_gl">
+			<image src="{{imgUrl[3]}}"/>
+		</navigator>
+	</van-transition>
+
+	<!-- 短时训练2 默认隐藏-->
+	<van-transition show="{{ www }}" custom-class="block">
+		<navigator url="../me_gl/me_gl">
+			<image src="{{imgUrl[2]}}"/>
+		</navigator>
+	</van-transition>
+
+
+	<van-transition show="{{ www }}" custom-class="block">
+		<navigator url="../me_gl/me_gl">
+			<image src="{{imgUrl[1]}}"/>
+		</navigator>
+	</van-transition>
+
+	<!-- 私教 默认隐藏-->
+	<van-transition show="{{ sj }}" custom-class="block">
+		<navigator url="../me_xl/me_xl">
+			<image src="{{imgUrl[4]}}"/>
+		</navigator>
+	</van-transition>
+</view>
+  
+  

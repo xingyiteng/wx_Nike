@@ -1,0 +1,19 @@
+<view class="image">
+    <image src="{{imgUrls[0]}}" />
+</view>
+
+<view class="txt">
+    <text class="frist">0/</text>
+    <text class="second">10</text>
+</view>
+
+<view class="input">
+    <navigator url="/pages/bzjh/bzjh">本周计划</navigator>
+    <navigator url="" bind:tap="wzjh">完整计划</navigator>
+    <button bind:tap="fenxiang" open-type="share">分享给好友</button>
+</view>
+
+<view class="btn">
+    <button bind:tap="jieshu">结束计划</button>
+</view>
+<van-dialog id="van-dialog" />

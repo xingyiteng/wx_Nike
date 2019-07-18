@@ -1,0 +1,52 @@
+.top_img {
+    position: relative;
+}
+.top_img image:nth-child(1){
+    width: 100%;
+    height: 300rpx;
+}
+.top_img image:nth-child(2){
+    position: absolute;
+    top: 215rpx;
+    left: 304rpx;
+    width: 162rpx;
+    height: 162rpx;
+    border-radius: 100rpx;
+}
+.name{
+    text-align: center;
+    margin-top: 70rpx;
+    font-weight: bold;
+    font-size: 32rpx;
+}
+.box{
+    padding: 40rpx;
+    font-size: 32rpx;
+}
+.box .jj{
+    font-weight: bold;
+    margin:20rpx 0;
+}
+.box .con{
+    color: #5e5858;
+}
+.item navigator{
+    display: flex;
+    padding: 20rpx 20rpx;
+    border-top: 1rpx solid #eeeeee;
+}
+.item .item_img image{
+    height: 160rpx;
+    width: 160rpx;
+}
+.item  .item_r{
+    margin-top: 40rpx;
+    margin-left: 40rpx;
+    line-height: 1.5;
+}
+.item  .item_r .tit{
+    font-weight: bold;
+}
+.item  .item_r .time{
+    color: #5e5858;
+}

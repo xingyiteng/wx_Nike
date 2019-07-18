@@ -1,0 +1,1 @@
+<video src="{{subjects[0].video}}" autoplay="true" direction enable-play-gesture="true" show-fullscreen-btn="false"></video>

@@ -1,0 +1,20 @@
+<!-- 图片轮播 -->
+<view class="box">
+  <swiper indicator-dots="{{true}}"
+  duration="{{1100}}" autoplay="{{false}}" circular="{{true}}">
+  <block>
+    <swiper-item wx:for="{{imgUrls}}">
+      <image src="{{item}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+
+<!-- 立即进入 -->
+<view class="btn">
+    <!-- <navigator open-type="switchTab" bindgetuserinfo="btn_sub" url="../shouye/shouye">
+        立即进入
+    </navigator> -->
+       <button bindtap="bindViewTap" open-type="getUserInfo" bindgetuserinfo="getUserInfo">点击进去</button>
+         
+</view>

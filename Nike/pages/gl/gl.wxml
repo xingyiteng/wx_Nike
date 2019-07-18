@@ -1,0 +1,32 @@
+<view class="bg" style="background:url('http://a3.qpic.cn/psb?/V12mACl60hSBap/.RSvQWfjfNquE13Suf0OQts7Nn43KZY1fKbvkqBTfZg!/m/dDYBAAAAAAAAnull&bo=OATHAgAAAAARB8k!&rf=photolist&t=5') no-repeat;background-size: 100%;">
+    <navigator url="/pages/ds_video/ds_video" class="ks">开始</navigator>
+</view>
+
+<view class="rq">适合人群</view>
+<view class="rq2">锻炼，核心肌群力量，下半身耐力，上半身力量</view>
+<view class="img"><image src="{{imgUrls[2]}}" /></view>
+
+<view class="cjz">训练创建者</view>
+<view class="name">Kirsty Godso</view>
+
+<view class="rs">热身</view>
+<view class="con"  wx:for="{{subjects}}" wx:if="{{index<9}}" data-index="{{index}}" bind:tap="zs" wx:key>
+    <view class="box">
+        <image src="{{item.image}}" />
+        <view class="box_r"><text >{{item.estDurationSec}}</text><text >{{item.name}}</text></view>
+    </view>
+</view>
+
+<van-popup show="{{ show }}"position="bottom">
+    <view class="box" bind:tap="gb">
+        <image src="{{box_img}}" />
+        <view class="box_r"><text >{{box_id}}</text><text >{{box_name}}</text></view>
+    </view>
+    <video style="width:100%" src="{{box_video}}" />
+</van-popup>
+
+<view class="db">
+    <button class="btn" bind:tap="tz">{{tjxl}}</button>
+    <button class="btn" bind:tap="ljks">立即开始</button>
+</view>
+

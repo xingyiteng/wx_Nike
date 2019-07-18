@@ -1,0 +1,24 @@
+
+.box navigator{
+    display: flex;
+    padding: 40rpx;
+    font-weight: bold;
+    border-bottom: 2rpx solid #eeeeee;
+}
+.box .box_left{
+    height: 120rpx;
+    line-height: 120rpx;
+    border-right: 4rpx solid red; 
+    padding-right: 30rpx;
+}
+.box .box_right{
+    flex-grow: 1;
+    padding-left: 20rpx;
+    height: 120rpx;
+    display: flex;
+    justify-content: space-between;
+    line-height: 120rpx;
+}
+.box .box_right view:nth-child(2){
+    color: #999999;
+}

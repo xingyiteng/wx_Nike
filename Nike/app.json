@@ -1,0 +1,65 @@
+{
+	"pages": [
+		"pages/start/start",
+		"pages/bzjh/bzjh",
+		"pages/shouye/shouye",
+		"pages/ds_video/ds_video",
+		"pages/index/index",
+		"pages/me_gl/me_gl",
+		"pages/me/me",
+		"pages/dsxl/dsxl",
+		"pages/jsrm/jsrm",
+		"pages/rmjh/rmjh",
+		"pages/gl/gl",
+		"pages/xl/xl",
+		"pages/jhsz/jhsz",
+		"pages/sj/sj",
+		"pages/sjxq/sjxq",
+		"pages/xiazai/xiazai",
+		"pages/logs/logs"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#000000",
+		"navigationBarTitleText": "WeChat",
+		"navigationBarTextStyle": "white",
+		"enablePullDownRefresh":true
+	},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "pages/shouye/shouye",
+				"text": "首页",
+				"iconPath":"img/shouye.png",
+				"selectedIconPath":"img/shouye1.png"
+			},
+			{
+				"pagePath": "pages/xiazai/xiazai",
+				"iconPath":"img/xiazai.jpg",
+				"selectedIconPath":"img/xiazai.jpg",
+				"text": "下载"
+			},
+			{
+				"pagePath": "pages/me/me",
+				"text": "我的",
+				"iconPath": "img/wode.png",
+				"selectedIconPath": "img/wode1.png"
+			}
+		]
+	},
+	"sitemapLocation": "sitemap.json",
+	"usingComponents": {
+		"van-tabbar": "utils/dist/tabbar/index",
+		"van-tabbar-item": "utils/dist/tabbar-item/index",
+		"van-toast": "utils/dist/toast/index",
+		"van-popup": "utils/dist/popup/index",
+		"van-dialog": "utils/dist/dialog/index",
+		"van-collapse": "utils/dist/collapse/index",
+		"van-collapse-item": "utils/dist/collapse-item/index",
+		"van-datetime-picker": "utils/dist/datetime-picker/index",
+		"van-transition": "utils/dist/transition/index",
+		"van-notify": "utils/dist/notify/index",
+		"van-checkbox": "utils/dist/checkbox/index",
+		  "van-checkbox-group": "utils/dist/checkbox-group/index"
+	  }
+}

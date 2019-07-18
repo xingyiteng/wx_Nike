@@ -1,0 +1,18 @@
+<!-- 图片轮播 -->
+<view class="box">
+  <swiper indicator-dots="{{true}}"
+  duration="{{1100}}" autoplay="{{false}}" circular="{{true}}">
+  <block>
+    <swiper-item wx:for="{{imgUrls}}">
+      <image src="{{item}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+
+<view class="btn" bindtap="bindViewTap"> 
+    <button>下载</button>
+</view>
+
+  
+  

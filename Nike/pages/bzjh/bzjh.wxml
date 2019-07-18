@@ -1,0 +1,63 @@
+<view class="box">
+    <navigator url="/pages/jh_gl/jh_gl">
+        <view class="box_left">周一</view>
+        <view class="box_right">
+            <view >灵动性</view>
+            <view >></view>
+        </view>
+    </navigator>
+</view>
+<view class="box">
+    <navigator url="/pages/jh_gl/jh_gl">
+    <view class="box_left">周二</view>
+    <view class="box_right">
+        <view >力量性</view>
+        <view >></view>
+    </view>
+    </navigator>
+</view>
+<view class="box">
+    <navigator>
+    <view class="box_left">周三</view>
+    <view class="box_right">
+        <view style="color:#f44">休息日</view>
+        <view >></view>
+    </view>
+    </navigator>
+</view>
+<view class="box">
+    <navigator url="/pages/jh_gl/jh_gl">
+    <view class="box_left">周四</view>
+    <view class="box_right">
+        <view >运动性</view>
+        <view >></view>
+    </view>
+    </navigator>
+</view>
+<view class="box">
+    <navigator url="/pages/jh_gl/jh_gl">
+    <view class="box_left">周五</view>
+    <view class="box_right">
+        <view >灵动性</view>
+        <view >></view>
+    </view>
+    </navigator>
+</view>
+<view class="box">
+    <navigator>
+    <view class="box_left">周六</view>
+    <view class="box_right">
+        <view style="color:#f44">休息日</view>
+        <view >></view>
+    </view>
+    </navigator>
+</view>
+<view class="box">
+    <navigator>
+    <view class="box_left">周日</view>
+    <view class="box_right">
+        <view style="color:#f44">休息日</view>
+        <view >></view>
+    </view>
+    </navigator>
+</view>

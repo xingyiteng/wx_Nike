@@ -1,0 +1,63 @@
+.txt{
+    width:70%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30rpx;
+    color: #999999;
+    padding: 40rpx;
+}
+.ts{
+    padding-left: 50rpx;
+    font-size: 26rpx;
+}
+.list ul{
+    padding-left: 50rpx;
+
+}
+.list ul li{
+    display: block;
+    height: 80rpx;
+    line-height: 80rpx;
+    padding-left: 50rpx;
+    color: #000000;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 36rpx;
+}
+.riqi{
+    width: 250rpx;
+    margin: 50rpx;
+    margin-bottom: 20rpx;
+    color: #000000;
+    border-bottom: 1px solid #000000;
+}
+.btn{
+    margin-top: 20rpx;
+    width: 200rpx;
+    height: 60rpx;
+    background: #000000;
+    border-radius: 10rpx;
+    line-height: 60rpx;
+    font-size: 30rpx;
+    color: #ffffff;
+}
+.tian{
+    background: #eeeeee;
+}
+.tian1{
+    background: #eeeeee;
+}
+.tian2{
+    background: #eeeeee;
+}
+.tian3{
+    background: #eeeeee;
+}
+.zd{
+    margin-top: 150rpx;
+    width: 60%;
+    background: #000000;
+    height: 80rpx;
+    line-height: 80rpx;
+    color: #ffffff;
+    font-size: 32rpx;
+}

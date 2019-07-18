@@ -1,0 +1,12 @@
+<view class="box">
+        <navigator url="../rmjh/rmjh">
+            <image src="{{imgUrls[0]}}"/>
+        </navigator>
+		<navigator url="../dsxl/dsxl">
+            <image src="{{imgUrls[1]}}"/>
+        </navigator>
+		<navigator url="../sj/sj">
+            <image src="{{imgUrls[2]}}"/>
+        </navigator>
+</view>
+  

@@ -1,0 +1,50 @@
+<view class="txt">
+    你在此填写的所有信息都能帮助我打造最适合你的个性计划
+</view>
+
+<view class="list">
+    <van-collapse value="{{ activeNames }}" bind:change="onChange">
+        <van-collapse-item title="每周训练次数{{cishu}}" name="2" icon="{{tian||tian1||tian2||tian3?'checked':'add'}}">
+            <view class="ts">你每周有多少天进行训练？</view>
+            <ul>
+                <li bind:tap="cishu" class="{{tian?'tian':'tia'}}">2-3天</li>
+                <li bind:tap="cishu2" class="{{tian1?'tian1':'tia'}}">3-4天</li>
+                <li bind:tap="cishu3" class="{{tian2?'tian2':'tia'}}">4-5天</li>
+                <li bind:tap="cishu4" class="{{tian3?'tian3':'tia'}}">5-6天</li>
+            </ul>
+        </van-collapse-item>
+        <van-collapse-item title="你的活跃度{{hy}}" name="3" icon="{{tiana||tiana1||tiana2||tiana3?'checked':'add'}}">
+            <view class="ts">告诉我们你目前每周训练多少小时。</view>
+            <ul>
+                <li bind:tap="hy" class="{{tiana?'tian':'tia'}}">每周0-1小时</li>
+                <li bind:tap="hy2" class="{{tiana1?'tian1':'tia'}}">每周2-4小时</li>
+                <li bind:tap="hy3" class="{{tiana2?'tian2':'tia'}}">每周5-8小时</li>
+                <li bind:tap="hy4" class="{{tiana3?'tian3':'tia'}}">每周9+小时</li>
+            </ul>
+        </van-collapse-item>
+        <van-collapse-item title="开始日期 {{rizi}}" name="4" icon="{{qq?'checked':'add'}}">
+            <view class="ts">你希望计划在何时开始</view>
+            <view class="riqi" bind:tap="dianji">{{currentDate}}</view>
+            <view class="ts">不确定从何时开始？从今天开始，助你一路坚持到底。</view>
+            <view style="width:200rpx;margin-left:50rpx;"><button class="btn" bind:tap="qd">确定</button></view>
+            <van-transition wx:if="{{riqi}}" custom-class="block" name="slide-up" >
+                <van-datetime-picker
+                type="date"
+                bind:cancel="oncancel"
+                value="{{ currentDateval }}"
+                bind:input="onInput"
+                bind:confirm="onconfirm"
+                min-date="{{ minDate }}"
+                formatter="{{ formatter }}"
+            />
+            </van-transition>
+
+        </van-collapse-item>
+    </van-collapse>
+</view>
+
+<view>
+    <button class="zd" wx:if="{{true}}" bind:tap="tz">制定我的计划</button>
+</view>
+
+<van-notify id="custom-selector" />

@@ -1,0 +1,102 @@
+.bg{
+    width: 100%;
+    height: 380rpx;
+    position: relative;
+}
+.bg .ks{
+    display: block;
+    width: 110rpx;
+    height: 110rpx;
+    border-radius: 100rpx;
+    position: absolute;
+    bottom: 20rpx;
+    left: 330rpx;
+    text-align: center;
+    line-height: 110rpx;
+    font-size: 34rpx;
+    background: greenyellow;
+}
+.rq{
+    margin-top: 30rpx;
+    margin-bottom: 20rpx;
+    text-align: center;
+    font-size: 50rpx;
+}
+.rq2{
+    text-align: center;
+    font-size: 34rpx;
+}
+.img {
+    margin-top: 30rpx;
+}
+.img image{
+    width: 100%;
+    height: 450rpx;
+}
+.cjz{
+    margin-top: 30rpx;
+    text-align: center;
+    font-size: 38rpx;
+}
+.name{
+    text-align: center;
+    margin-top: 20rpx;
+    font-size: 42rpx;
+}
+.rs{
+    margin-top: 20rpx;
+    padding: 10rpx;
+    padding-left: 30rpx;
+    font-size: 32rpx;
+    background: #e0d8d8;
+}
+.con:nth-child(17){
+    margin-bottom: 120rpx;
+}
+.con video{
+    width: 100%;
+}
+.box{
+    display: flex;
+    border-bottom: 1rpx solid #eeeeee;
+}
+.box image{
+    width: 200rpx;
+    height: 200rpx;
+}
+.box .box_r{
+    margin-left: 30rpx;
+    flex-grow: 1;
+    height: 200rpx;
+    line-height: 200rpx;
+}
+.box .box_r text:nth-child(1){
+    margin-right: 60rpx;
+}
+.video{
+    border: 1px solid red;
+}
+.video video{
+    height: 600rpx;
+}
+.db{
+    width: 100%;
+    background: #000000;
+    height: 120rpx;
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+}
+.db .btn{
+    width: 50%;
+    height: 120rpx;
+    background: #000000;
+    color: #ffffff;
+    line-height: 120rpx;
+    font-size: 34rpx;
+    border-radius: 0;
+}
+.db button:nth-child(1){
+    border-right: 1rpx solid #999999;
+}

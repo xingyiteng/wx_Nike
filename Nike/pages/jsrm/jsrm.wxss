@@ -1,0 +1,48 @@
+.image image{
+    width: 100%;
+    height: 350rpx;
+}
+.txt{
+    margin-top: 30rpx;
+    text-align: center;
+    font-size: 30rpx;
+}
+.txt .frist{
+    font-size: 60rpx;
+}
+.input navigator{
+    margin: 40rpx auto;
+    display: block;
+    width: 70%;
+    height: 60rpx;
+    border: 2rpx solid #000000;
+    border-radius: 10rpx;
+    text-align: center;
+    line-height: 60rpx;
+    color: #000000;
+    font-size: 28rpx;
+}
+.input button{
+    margin: 40rpx auto;
+    display: block;
+    width: 70%;
+    height: 60rpx;
+    border: 2rpx solid #000000;
+    border-radius: 10rpx;
+    text-align: center;
+    line-height: 60rpx;
+    color: #000000;
+    font-size: 28rpx;
+}
+.btn{
+    margin-top: 100rpx;
+}
+.btn button{
+    width: 60%;
+    background: #000000;
+    height: 80rpx;
+    font-size: 32rpx;
+    line-height: 80rpx;
+    text-align: center;
+    color: #ffffff;
+}

@@ -1,0 +1,15 @@
+<view class="box" wx:for="{{sj}}" data-index="{{index}}" wx:for-index="index"  bind:tap="qq">
+    <navigator>
+        <view class="box_img">
+            <image src="{{item.imgUrls}}" />
+        </view>
+        <view class="box_con">
+            <view class="tit">
+                {{item.name}}
+            </view>
+            <view class="txt">
+                Nike签约教练，女子健康运动倡导者，擅长NTC/瑜伽，坐标北京。
+            </view>
+        </view>
+    </navigator>
+</view>

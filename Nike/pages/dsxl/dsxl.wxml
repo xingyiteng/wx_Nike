@@ -1,0 +1,73 @@
+<view class="box">
+    <navigator url="../gl/gl?index=1">
+        <image src="{{imgUrls[0]}}" />
+        <view class="box_R">
+            <view>基础燃脂</view>
+            <view>初级-耐力</view>
+        </view>
+        <view class="xuanze" wx:if="{{showf}}">
+            <van-checkbox
+                disabled
+                value="{{ true }}"
+                bind:change="onChange">
+            </van-checkbox>
+            <view class="yx">已选</view>
+        </view>
+    </navigator>
+</view>
+<view class="box">
+    <navigator url="../gl/gl">
+        <image src="{{imgUrls[1]}}" />
+        <view class="box_R">
+            <view>核心缩腹 2.0</view>
+            <view>初级-灵活性</view>
+        </view>
+        <view class="xuanze" wx:if="{{second}}">
+            <van-checkbox
+                disabled
+                value="{{ true }}"
+                bind:change="onChange">
+            </van-checkbox>
+            <view class="yx">已选</view>
+        </view>
+    </navigator>
+</view>
+<view class="box">
+    <navigator url="../gl/gl">
+        <image src="{{imgUrls[2]}}" />
+        <view class="box_R">
+            <view>扩展空间</view>
+            <view>初级-灵活性</view>
+        </view>
+    </navigator>
+</view>
+<view class="box">
+    <navigator url="../gl/gl">
+        <image src="{{imgUrls[3]}}" />
+        <view class="box_R">
+            <view>燃烧点</view>
+            <view>初级-耐力</view>
+        </view>
+    </navigator>
+</view>
+<view class="box">
+    <navigator url="../gl/gl">
+        <image src="{{imgUrls[4]}}" />
+        <view class="box_R">
+            <view>循环刺激</view>
+            <view>初级-灵活性</view>
+        </view>
+    </navigator>
+</view>
+<view class="box">
+    <navigator url="../gl/gl">
+        <image src="{{imgUrls[5]}}" />
+        <view class="box_R">
+            <view>开启时间</view>
+            <view>初级-灵活性</view>
+        </view>
+    </navigator>
+</view>
+<view class="btn">
+    <button bind:tap="tc">更多训练</button>
+</view>

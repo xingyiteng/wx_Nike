@@ -1,0 +1,26 @@
+.box navigator{
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    padding: 30rpx 60rpx;
+}
+.box .box_img image{
+    width: 200rpx;
+    height: 200rpx;
+    vertical-align: middle;
+}
+.box .box_con{
+    margin-left: 20rpx;
+    overflow: hidden;
+}
+.box .box_con .tit{
+    margin-top: 10rpx;
+    font-size: 35rpx;
+    color: #000000;
+    font-weight: bold;
+}
+.box .box_con .txt{
+    margin-top:10rpx;
+    font-size: 30rpx;
+    color: #999999;
+}

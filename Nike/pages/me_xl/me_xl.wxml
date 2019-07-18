@@ -1,0 +1,47 @@
+<view class="bg" style="background:url('http://a3.qpic.cn/psb?/V12mACl60hSBap/1APuCZ6QCuPk*.nnrdKWzbUvwXqkmwDB81PHekXB02M!/m/dLYAAAAAAAAAnull&bo=OAQ9AgAAAAARBzM!&rf=photolist&t=5') no-repeat;background-size: 100%;">
+    <navigator url="/pages/ds_video/ds_video" class="ks">开始</navigator>
+</view>
+
+<view class="name">
+    <view class="xlz">赶快运动起来吧</view>
+</view>
+
+<!-- <view class="con" wx:for="{{subjects}}" wx:key wx:key wx:if="{{index<10}}" bind:tap="show" data-index="{{index}}">
+    <view class="box">
+        <view class="box_img">
+            <image src="{{item.image}}" />
+        </view>
+        <view class="txt">
+            <view class="txt_item">
+                <view >{{item.name}}</view>
+            </view>
+            <view class="ts">{{item.subtext}}</view>
+        </view>
+    </view>
+    <block wx:if="{{index == cli}}">
+        <video src="{{item.video}}"/>
+    </block>
+</view> -->
+<view class="con"  wx:for="{{subjects}}" wx:if="{{index<9}}" data-index="{{index}}" bind:tap="zs" wx:key>
+    <view class="box">
+        <image src="{{item.image}}" />
+        <view class="box_r"><text >{{item.estDurationSec}}</text><text >{{item.name}}</text></view>
+    </view>
+</view>
+
+<van-popup show="{{ show }}"position="bottom">
+    <view class="box" bind:tap="gb">
+        <image src="{{box_img}}" />
+        <view class="box_r"><text >{{box_id}}</text><text >{{box_name}}</text></view>
+    </view>
+    <video style="width:100%" src="{{box_video}}" />
+</van-popup>
+
+<view class="db">
+    <button class="btn" bind:tap="fenxiang" open-type="share">分享给好友</button>
+    <button class="btn" bind:tap="sc">删除训练</button>
+</view>
+<!-- <van-toast id="van-toast" /> -->
+<van-dialog id="van-dialog" />
+
+

@@ -1,0 +1,22 @@
+<view class="img">
+<image src="{{imgUrls[0]}}" />
+</view>
+
+<view class="con">
+    <view class="con1">
+        <view >训练级别</view>
+        <view >初级和中级</view>
+    </view>
+
+    <view class="con2">
+        <view >合适人群</view>
+        <view >刚开始训练或只是想保持健康的人群</view>
+    </view>
+
+    <view class="con3" wx:if="{{show0}}">
+        <navigator url="../jhsz/jhsz">设置计划</navigator>
+    </view>
+    <view class="con3 con4" wx:if="{{show}}">
+        <navigator>你已创建</navigator>
+    </view>
+</view>
